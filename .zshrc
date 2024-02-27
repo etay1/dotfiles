@@ -112,6 +112,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-s
 source $ZSH/oh-my-zsh.sh
 
 alias lc='colorls'
+alias venv-15="source ~/15.0/bin/activate"
 
 # User configuration
 
