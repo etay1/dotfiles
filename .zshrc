@@ -113,6 +113,13 @@ source $ZSH/oh-my-zsh.sh
 
 alias lc='colorls'
 
+# alias for venv
+
+alias venv-15='source /home/odoo/.venv/15.0/bin/activate'
+alias venv-16='source /home/odoo/.venv/16.0/bin/activate'
+alias venv-17='source /home/odoo/.venv/17.0/bin/activate'
+
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
