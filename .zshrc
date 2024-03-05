@@ -118,7 +118,7 @@ alias lc='colorls'
 alias venv-15='source /home/odoo/.venv/15.0/bin/activate'
 alias venv-16='source /home/odoo/.venv/16.0/bin/activate'
 alias venv-17='source /home/odoo/.venv/17.0/bin/activate'
-
+alias oe-support='/home/odoo/src/support/support-tools/oe-support.py'
 
 # User configuration
 
