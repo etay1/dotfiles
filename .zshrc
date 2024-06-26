@@ -118,11 +118,13 @@ alias lc='colorls'
 alias venv-15='source /home/odoo/.venv/15.0/bin/activate'
 alias venv-16='source /home/odoo/.venv/16.0/bin/activate'
 alias venv-17='source /home/odoo/.venv/17.0/bin/activate'
-alias oe-support='/home/odoo/src/support/support-tools/oe-support.py'
-alias newdb='sh /home/odoo/src/support/us-support/scripts/generic/newdb'
+alias venv-17\.\1='source /home/odoo/.venv/17.1/bin/activate'
+alias oes='/home/odoo/dev/support/support-tools/oe-support.py'
+alias newdb='sh /home/odoo/dev/support/us-support/scripts/generic/newdb'
 alias download-custom='echo "tar -czvf archive.tar.gz ." | xclip -selection clipboard'
 
 # User configuration
+export GOPATH=~/go
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
