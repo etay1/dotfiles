@@ -1,7 +1,5 @@
 # Dotfiles
 
-This repository contains the dotfiles for Etay1, including configurations for Zsh.
-
 ## Zsh Configuration
 
 This repository includes configurations for Zsh. The main configuration file is `.zshrc`.
@@ -16,10 +14,6 @@ I use both [Oh My Zsh](https://ohmyz.sh/) and [Zplug](https://github.com/zplug/z
 ### Theme
 
 I'm using the [Powerlevel10k](https://github.com/romkatv/powerlevel10k) theme for Zsh. You can customize the theme according to your preference in the `.zshrc` file.
-
-## Customization
-
-Feel free to customize any of the configurations to suit your preferences. You can edit the `.zshrc` file directly or add additional configuration files as needed.
 
 ## Installation
 
