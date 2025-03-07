@@ -115,6 +115,40 @@ source $ZSH/oh-my-zsh.sh
 alias lc='colorls'
 alias newdb='sh /home/odoo/dev/support/us-support/scripts/generic/newdb'
 alias download-custom='echo "tar -czvf archive.tar.gz ." | xclip -selection clipboard'
+alias shitshow='source ~/.venvs/shitshow/bin/activate'
+
+# oes shit
+path_to_python="/usr/bin/python3"
+path_to_support_tools="/home/odoo/dev/support/support-tools"
+oe-support() {
+	$path_to_python $path_to_support_tools/oe-support.py $@
+}
+
+oes() {
+	$path_to_python $path_to_support_tools/oe-support.py $@
+}
+
+clean_database() {
+	$path_to_python $path_to_support_tools/clean_database.py $@
+}
+
+# Activate bash style completion
+# If you use oh-my-zsh, bashcompinit should already be autoloaded
+autoload bashcompinit
+bashcompinit
+source /home/odoo/dev/support/support-tools/scripts/completion/oe-support-completion.sh
+complete -o default -F _oe-support oes
+source /home/odoo/dev/support/support-tools/scripts/completion
+complete -o default -F _clean-database clean_database
+
+
+#func for scp
+copy() {
+    local user_and_host="$1"
+    local remote_path="~/src/user"
+    local destination_path="$HOME/dev/src"
+    scp -r "$user_and_host:$remote_path" "$destination_path"
+}
 
 # User configuration
 export GOPATH=~/go
