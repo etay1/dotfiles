@@ -123,6 +123,14 @@ alias oes='/home/odoo/dev/support/support-tools/oe-support.py'
 alias newdb='sh /home/odoo/dev/support/us-support/scripts/generic/newdb'
 alias download-custom='echo "tar -czvf archive.tar.gz ." | xclip -selection clipboard'
 
+# cursor function
+cursor() {
+  local target="${1:-.}"
+  nohup /home/etay1/Applications/Cursor-0.50.5-x86_64.AppImage "$target" >/dev/null 2>&1 &
+}
+
+
+
 # User configuration
 export GOPATH=~/go
 
@@ -154,3 +162,12 @@ export LANG=en_US.UTF-8
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# nvm stuff
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
